@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Examplinvi.Web.Models.TweetViewModel>
+
+<h3>All Tweets</h3>
+<div id="new-tweet-place"></div>
+
+@foreach (var tweet in Model)
+{
+    Html.RenderPartial("_Tweet", tweet);
+}
